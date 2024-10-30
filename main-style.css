@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.service, .backlinks, .form-section {
+    background: white;
+    padding: 30px;
+    margin: 20px auto; /* Centrer les sections */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.8s ease-in-out; /* Durée d'animation plus courte */
+    max-width: 800px; /* Limite la largeur des sections */
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+
+.backlinks h3 {
+    margin-top: 20px;
+    color: #2575fc;
+    text-align: left; /* Alignement à gauche pour les sous-titres */
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s; /* Ajout d'animation de transformation */
+}
+
+.cta-button:hover {
+    background: #6a11cb;
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le formulaire */
+}
+.form-section div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Full width of the form */
+    max-width: 400px
+}
+.form-section button,div{
+    font-size: 16px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="url"], textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px; /* Limite la largeur des champs de saisie */
+}
+
+textarea{
+    height: 200px;
+}
+
+
+
+button:hover {
+    background: #6a11cb;
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+}
+
+footer a {
+    color: #2575fc;
+}
+
+/* Styles supplémentaires pour les listes */
+.backlinks ul, .backlinks ol {
+    padding-left: 20px;
+    margin-top: 15px; /* Ajout d'espacement entre les listes */
+}
+
+.backlinks h2 {
+    margin-top: 30px; /* Espacement supérieur pour le titre */
+}
+
+#back-button {
+    margin-right: auto; /* Aligne à gauche */
+}
+
+#next-button {
+    margin-left: auto; /* Aligne à droite */
+}
+
+#step-button-container{
+    width: 60%;
+    display: flex;
+}
+#explanations_container {
+    background: white;
+    padding: 30px;
+    margin: 20px auto; /* Center the section */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.8s ease-in-out; /* Smooth slide-in animation */
+    max-width: 800px; /* Limits the width of the section */
+    text-align: center;
+    
+}
+
+#explanations_container img {
+    max-width: 90%;
+    height: auto;
+    padding: 5%;
+    border-bottom: solid 2px #2575fc;
+}
+#explanations_container p{
+    text-align: left;
+}
