@@ -84,9 +84,8 @@ function submitForm(event) {
 
         if (!document.getElementById("step-button-container")) {
             const message = document.createElement('p');
-            message.textContent = "Place this link : " + window.location.href  + " on the page you want to highlight. This step is optional but improves results!";
+            message.textContent = "Please add this link: " + window.location.href +' along with the mention "SEO made by". Unfortunately, if this step isn’t completed, our system won’t be able to publish your content. Thanks for understanding!'
             message.style = "text-align: justify; margin-bottom: 10px; width: 75%;";
-
             const buttonBox = document.createElement('div');
             buttonBox.id = "step-button-container";
 
@@ -105,7 +104,7 @@ function submitForm(event) {
             nextBtn.id = "next-button";
             nextBtn.className ="cta-button";
             nextBtn.onclick = function() {
-                boldText.textContent = "Thank you, your link will be posted in less than 6 hours !";
+                boldText.textContent = "Thank you, your link will be posted in less than 24 hours !";
                 document.getElementById("link_list").style.display = "block";
                 message.remove();
                 buttonBox.remove();
